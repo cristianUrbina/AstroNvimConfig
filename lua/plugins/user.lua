@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -81,5 +79,66 @@ return {
         Rule("a", "a", "-vim")
       )
     end,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    -- config = function()
+    --   require("todo-comments").setup{}
+    -- end
+    opts = {},
+    event = "User AstroFile",
+    cmd = { "TodoQuickFix" },
+    keys = {
+      { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
+    },
+  },
+
+  {
+    "ntpeters/vim-better-whitespace",
+    config = function()
+      -- Configuration settings for vim-better-whitespace go here
+      vim.g.better_whitespace_enabled = 1
+      vim.g.strip_whitespace_on_save = 1
+      vim.g.strip_whitespace_confirm = 0
+    end,
+    event = "User AstroFile",
+  },
+
+  {
+    "kristijanhusak/vim-dadbod-ui",
+    dependencies = {
+      { "tpope/vim-dadbod", lazy = true },
+      { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
+    },
+    cmd = {
+      "DBUI",
+      "DBUIToggle",
+      "DBUIAddConnection",
+      "DBUIFindBuffer",
+    },
+    init = function()
+      -- Your DBUI configuration
+      vim.g.db_ui_use_nerd_fonts = 1
+    end,
+  },
+
+  {
+    "tpope/vim-fugitive",
+    cmd = {
+      "G",
+      "Git",
+      "Gdiffsplit",
+      "Gvdiffsplit",
+      "Gread",
+      "Gwrite",
+      "Ggrep",
+      "Gmove",
+      "Gdelete",
+      "Gbrowse",
+      "Gstatus",
+      "Gblame",
+    },
   },
 }
