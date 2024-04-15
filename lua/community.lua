@@ -12,5 +12,5 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.colorscheme.everforest" },
+  { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
 }

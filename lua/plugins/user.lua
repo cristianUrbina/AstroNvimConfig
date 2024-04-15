@@ -152,4 +152,18 @@ return {
       }
     end,
   },
+  {
+    "maxmx03/fluoromachine.nvim",
+    config = function()
+      local fm = require "fluoromachine"
+
+      fm.setup {
+        glow = false,
+        theme = "fluoromachine",
+        transparent = "full", -- Setting transparent background
+      }
+
+      vim.cmd.colorscheme "fluoromachine"
+    end,
+  },
 }

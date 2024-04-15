@@ -17,7 +17,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
   "copilot.lua": { "branch": "master", "commit": "f7612f5af4a7d7615babf43ab1e67a2d790c13a6" },
   "dressing.nvim": { "branch": "master", "commit": "42d767b04c50a6966c9633e3968bc65c0c2f2bfc" },
-  "everforest": { "branch": "master", "commit": "4d67edd8d4701b00cee37073d53053a650264541" },
+  "fluoromachine.nvim": { "branch": "main", "commit": "b80436877e77d21e4c68f53840dc36621d6a5515" },
   "friendly-snippets": { "branch": "main", "commit": "ea068f1becd91bcd4591fceb6420d4335e2e14d3" },
   "gitsigns.nvim": { "branch": "main", "commit": "6ef8c54fb526bf3a0bc4efb0b2fe8e6d9a7daed2" },
   "go.nvim": { "branch": "master", "commit": "591a0b837420f27c734600fa5c6de87f18352e50" },
