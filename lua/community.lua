@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.completion.copilot-lua-cmp"},
-  { import = "astrocommunity.pack.html-css"},
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.colorscheme.everforest" },
 }
