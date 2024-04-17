@@ -23,6 +23,7 @@
   "go.nvim": { "branch": "master", "commit": "591a0b837420f27c734600fa5c6de87f18352e50" },
   "guess-indent.nvim": { "branch": "main", "commit": "b8ae749fce17aa4c267eec80a6984130b94f80b2" },
   "guihua.lua": { "branch": "master", "commit": "3b3126ae87c254f6849e708549ba76c39e3f42f8" },
+  "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
   "heirline.nvim": { "branch": "master", "commit": "03cff30d7e7d3ba6fdc00925f015822f79cef908" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3d08501caef2329aba5121b753e903904088f7e6" },
   "lazy.nvim": { "branch": "main", "commit": "bef521ac89c8d423f9d092e37b58e8af0c099309" },
