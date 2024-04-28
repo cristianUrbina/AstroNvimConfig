@@ -5,13 +5,14 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
+  { import = "astrocommunity.code-runner.overseer-nvim" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.motion.harpoon" },
 }
