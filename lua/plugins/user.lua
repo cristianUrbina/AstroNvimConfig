@@ -141,4 +141,29 @@ return {
       "Gblame",
     },
   },
+
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
+  {
+    "maxmx03/fluoromachine.nvim",
+    config = function()
+      local fm = require "fluoromachine"
+
+      fm.setup {
+        glow = false,
+        theme = "fluoromachine",
+        transparent = "full", -- Setting transparent background
+      }
+
+      vim.cmd.colorscheme "fluoromachine"
+    end,
+  },
 }
