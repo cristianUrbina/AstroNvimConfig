@@ -153,17 +153,10 @@ return {
     end,
   },
   {
-    "maxmx03/fluoromachine.nvim",
-    config = function()
-      local fm = require "fluoromachine"
-
-      fm.setup {
-        glow = false,
-        theme = "fluoromachine",
-        transparent = "full", -- Setting transparent background
-      }
-
-      vim.cmd.colorscheme "fluoromachine"
-    end,
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function() vim.g.mkdp_filetypes = { "markdown" } end,
+    ft = { "markdown" },
   },
 }
