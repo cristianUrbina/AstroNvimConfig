@@ -196,4 +196,8 @@ return {
     init = function() vim.g.mkdp_filetypes = { "markdown" } end,
     ft = { "markdown" },
   },
+  {
+  "RRethy/vim-illuminate",
+  enabled = false,
+  },
 }
