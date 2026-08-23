@@ -43,7 +43,20 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = {
+        cmd = {
+          "clangd",
+          "--background-index",
+          "--clang-tidy",
+          "--header-insertion=never",
+          -- CRITICAL: Let clangd pull include systems out of ESP-IDF's cross compilers
+          "--query-driver=/**/xtensa-*-elf-gcc,/**/riscv32-*-elf-gcc,/**/*esp-elf*/bin/*gcc",
+        },
+        capabilities = {
+          -- Essential workaround for clangd vs neovim encoding conflicts
+          offsetEncoding = "utf-16",
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
